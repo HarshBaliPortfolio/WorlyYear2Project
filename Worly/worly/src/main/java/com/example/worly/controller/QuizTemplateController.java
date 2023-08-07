@@ -50,7 +50,7 @@ public class QuizTemplateController {
 		msgrq.setMsg(msgText);
 		model.addAttribute("msg", msgrq);
 		
-		if (validateAdmin(session)==false) 
+		if (validateAdmin(session)==false)
 			return errorpagename;
 			
         QuizTemplateRequest quiztemprequest = new QuizTemplateRequest();
@@ -65,7 +65,7 @@ public class QuizTemplateController {
     
     // POST api/quiztemplate/    
     @PostMapping("")
-    @ResponseBody
+//    @ResponseBody
 	public String submitForm(Model model, @ModelAttribute("request") QuizTemplate request, HttpSession session) {
     	Message msgrq = new Message();
 		msgrq.setMsg(msgText);
@@ -75,15 +75,16 @@ public class QuizTemplateController {
 			return errorpagename;
     	
     	if (quizTempService.quizNameExists(request.getQuizName())) {
-    		return "not added";
+    		return "redirect:/api/quiztemplates";
     	}
     	
     	quizTempService.addQuizTemplate(request.getQuizName());
-    	return "New quiz template added";
+//    	return "New quiz template added";
+    	return "redirect:/api/quiztemplates";
 	}
     
     @PostMapping("releasequiz")
-    @ResponseBody
+//    @ResponseBody
 	public String releaseQuizTemplate(Model model, @RequestParam("qtid") int qtid, HttpSession session)
 	{
     	Message msgrq = new Message();
@@ -94,7 +95,8 @@ public class QuizTemplateController {
 			return errorpagename;
     	
     	quizTempService.releaseQuizTemplate(qtid);
-    	return "Quiz is now released and non editable";
+//    	return "Quiz is now released and non editable";
+    	return "redirect:/api/quiztemplates";
 	}
     
     // GET api/quiztemplate/view?=    
@@ -112,6 +114,8 @@ public class QuizTemplateController {
     	{
     		if (quizTempService.isEditable(qtid))
     			return qtid+" should be editable"; // redirection to the edit page is needed here
+//    			return "quiz_template";
+    			
     		else {
     			QuizTemplate quizTemplate = quizTempService.getQuizTemplate(qtid).get();
     			model.addAttribute("quizTemplate", quizTemplate);
@@ -123,7 +127,8 @@ public class QuizTemplateController {
     		}
     	}
     	else
-    		return "this quiz template does not exist"; // redirect to the quiz template page is needed here
+//    		return "this quiz template does not exist"; // redirect to the quiz template page is needed here
+    		return "quiz_template";
     }
     
     

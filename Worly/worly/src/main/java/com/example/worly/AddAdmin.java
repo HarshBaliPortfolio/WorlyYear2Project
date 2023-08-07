@@ -22,12 +22,13 @@ import com.example.worly.user.UserRole;
 		@Override
 		public void run(String... args) throws Exception {
 			
-			boolean addAdmin = false;
+			// set to false to stop adding the admin again and again 
+			boolean addAdmin = true;
 			
 			if (addAdmin) {
 
 				//add here to become admin
-				User adminUser = new User("name","surname","email@gmail.com","password","UB8 1PH", UserRole.ADMIN);
+				User adminUser = new User("name","surname","jane@gmail.com","password","postcode", UserRole.ADMIN);
 				userRepos.save(adminUser);
 				userService.createAdminForUser(adminUser);
 				userService.enableUser(adminUser.getEmail());
