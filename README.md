@@ -2,7 +2,7 @@
 Worly is my 2nd year (2020-2021) software project, where I worked in collaboration to develop a software program. 
 
 In second year we were tasked to develop an application that targeted one of the United Nation's Sustainable Goals. After brainstorming ideas for the project, my team decided to target Climate Action.
-Check out our brainstorming activity: https://www.mindmeister.com/app/map/2879832123?t=70Axe9tA3h 
+Check out our [brainstorming activity](https://www.mindmeister.com/app/map/2879832123?t=70Axe9tA3h)
 
 Worly is a web application that has two type of users:
 1. Regular Users:
