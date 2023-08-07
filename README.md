@@ -13,10 +13,10 @@ Worly is a web application that has two type of users:
 
 ## Worly's Project worflow:
 1. Brainstorming & pitching ideas.
-2. Creating initial designs as a starting points.
+2. Creating initial designs as a starting points. Checkout Wory's [Design](/Design/)
 3. Scrum Planning.
-4. Sprint Planning and retrospective.
-    - Simultaneously, learning technologies and using the knowledge to implement features.
+4. Sprint Planning and retrospective. [Run Worly](/Worly)
+    - Simultaneously, learning technologies and using the knowledge to implement features within sprints. 
 5. Presenting Worly to panel of supervisors.
 
 ## Software Development Lifecycle used:  
