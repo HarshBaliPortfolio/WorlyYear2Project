@@ -28,7 +28,7 @@ Worly is a web application that has two type of users:
 ## Personal Development Outcome:
 - Acquired Agile mindset: (Ability to prioritise tasks)
 - Acquired experience of working with a team to develop a software. 
-- Learnt back-end technologies like: GIT/GITHUB, Springboot, Thymeleaf, SQL, REST API, Junit testing, etc.
+- Learnt technologies like: GIT/GITHUB, Springboot, Thymeleaf, SQL, REST API, Junit testing, etc.
 - Learnt the importance of improving the readability of the code. 
 - Gained first-hand experience of leading a team.
 
