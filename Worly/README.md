@@ -2,7 +2,7 @@
 
 ## Tools Required to RUN Worly
 1. Any JAVA IDE, such as: [Eclipse](https://www.eclipse.org/downloads/)
-2. [MySQL Workbench] (https://dev.mysql.com/downloads/workbench/)
+2. [MySQL Workbench](https://dev.mysql.com/downloads/workbench/)
 3. To register as new regular user: [MailDev](https://github.com/maildev/maildev)
 
 ## Loading-up and Initia Run
